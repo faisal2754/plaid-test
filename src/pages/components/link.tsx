@@ -16,7 +16,7 @@ export default function Link(props: { linkToken: string }) {
     token: props.linkToken,
     onSuccess: (public_token, metadata) => {
       // send public_token to server
-      toast.success("Sending public token to server...");
+      toast.success("Thanks for connecting!");
     },
     onExit: (err, metadata) => {
       // handle the case when your user exits Link
